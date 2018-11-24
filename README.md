@@ -1,4 +1,4 @@
-# LaBelleNote Article Maker
+# Guppy-CMS Article Maker
 Python tool aiming at generating rich and multi-lingual Guppy-CMS articles.
 
 # What it is all about
