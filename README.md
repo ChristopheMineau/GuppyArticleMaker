@@ -2,10 +2,10 @@
 Python tool aiming at generating rich and multi-lingual Guppy-CMS articles.
 
 # What it is all about
-This project is made only for Guppy-CMS users, you can get it there  : https://www.freeguppy.org/  
-I frequently post my work as a craftsman on my Website for know how sharing purposes, and I always make my articles based on a bunch of pictures, youtube videos, explicative texts.  
-I publish all articles in two languages, French and English.  
-In order to reduce the necessary time to do all that editorial stuff, I have developped this helper code in python.  
+This project is made only for Guppy-CMS users, you can get it there  : https://www.freeguppy.org/    
+I frequently post my work as a craftsman on my Website for know how sharing purposes, and I always make my articles based on a bunch of pictures, youtube videos, explicative texts.    
+I publish all articles in two languages, French and English.    
+In order to reduce the necessary time to do all that editorial stuff, I have developped this helper code in python.    
 
 # License
 This work can be shared under the respect of the Creative Commons License: CC BY-NC-SA 4.0
@@ -13,13 +13,13 @@ This work can be shared under the respect of the Creative Commons License: CC BY
 
 	
 # About Me
-This is personnal work from Christophe Mineau, I am an amateur craftsman, maker and professional software designer.
-Most of my craft work is published on my Website : www.labellenote.fr
-Most of my tooling work is also published on HomeMadeTools.net : http://www.homemadetools.net/builder/Christophe+Mineau 
+This is personnal work from Christophe Mineau, I am an amateur craftsman, maker and professional software designer.  
+Most of my craft work is published on my Website : www.labellenote.fr  
+Most of my tooling work is also published on HomeMadeTools.net : http://www.homemadetools.net/builder/Christophe+Mineau   
 
 
 # How To Use it
-Here are the steps that need to be taken :    
+Here are the steps that need to be taken :      
 
 * Create a directory and gather all the pictures you want to pubish
 * Launch the tool once, with no parameter in that directory :  
