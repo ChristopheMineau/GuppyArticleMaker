@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ARTICLE lang="('Fr', 'En')" relpath_on_site="file/dir1/dir2">
+  <!--
+        Balise ARTICLE : 
+        Attributs obligatoires :
+        * relpath_on_site= Chemin relatif pointant le répertoire des photos sur le site Guppy, Exemple : 'file/dir1/dir2'
+        * lang= Langues de publication , Exemple: 
+            ('Fr')          L'article est produit en une seule langue, pas de traduction
+            ('Fr', 'En')  L'article est produit une fois en Français, une fois en Anglais
+        Langages possibles : https://en.wikipedia.org/wiki/ISO_639-1
+        -->
+  <TITLE>MON TITRE</TITLE>
+  <!--
+        Balise TITLE :
+        Attributs optionnels :
+        * format = 'h1'  : titre de niveau 1
+          format = 'h2'  : titre de niveau 2
+          format = 'h3'  : titre de niveau 3
+        -->
+  <HEAD_PICTURE>my_preferred_picture.jpg</HEAD_PICTURE>
+  <!--
+        Balise HEAD_PICTURE : Image de présentation de l'article (celle qui sera partagée sur FB)
+        Attributs  :
+        * width='400' (optionnel) : largeur de l'image 
+        -->
+  <BLABLA>Enter here description before the video</BLABLA>
+  <!--
+        Balise BLABLA :  paragraphe de texte
+        -->
+  <PHOTO>
+    <!--
+        Balise PHOTO : Une photo d'illustration isolée 
+        -->
+    <NAME>one_illustration.jpg</NAME>
+    <DESCRIPTION>Description of the illustration.</DESCRIPTION>
+  </PHOTO>
+  <SPACER lines="3"/>
+  <!--
+        Balise SPACER :  sauts de lignes
+        Attribut obligatoire :
+        * lines = 'n'   nombre de lignes à sauter
+        -->
+  <VIDEO>https://youtu.be/Ljli2uJJO0k</VIDEO>
+  <!--
+        Balise VIDEO :  insérer une vidéo YOUTUBE
+        Code Youtube  pour insérer une vidéo. (cliquer partager dans Youtube)
+        Attributs facultatifs :
+        *  width = 'largeur'  (560 par défaut)
+        *  height = 'hauteur' (315) par défaut
+        -->
+  <BLABLA>Enter here description after the video</BLABLA>
+  <!--
+        Balise BLABLA :  paragraphe de texte
+        -->
+  <PHOTOS format="Table_1col">
+    <!--
+        Balise PHOTOS : Collection de photos
+        Attribut obligatoire :
+        * format = Comment seront affichées les photos, 4 valeurs possibles :
+            Table_1col : un tableau à 1 colonne de photo et sa description 
+            Table_2col : un tableau à deux colonnes de photo et leur description au dessous
+            Carousel  : un diaporama défilant
+        -->
+    <PHOTO>
+      <NAME>Anti_debordement_0001.jpg</NAME>
+      <DESCRIPTION> _ Description  _</DESCRIPTION>
+    </PHOTO>
+    <PHOTO>
+      <NAME>Anti_debordement_0002.jpg</NAME>
+      <DESCRIPTION> _ Description  _</DESCRIPTION>
+    </PHOTO>
+    <PHOTO>
+      <NAME>Anti_debordement_0003.jpg</NAME>
+      <DESCRIPTION> _ Description  _</DESCRIPTION>
+    </PHOTO>
+    <PHOTO>
+      <NAME>Anti_debordement_0004.jpg</NAME>
+      <DESCRIPTION> _ Description  _</DESCRIPTION>
+    </PHOTO>
+    <PHOTO>
+      <NAME>Anti_debordement_0005.jpg</NAME>
+      <DESCRIPTION> _ Description  _</DESCRIPTION>
+    </PHOTO>
+    <PHOTO>
+      <NAME>Anti_debordement_0006.jpg</NAME>
+      <DESCRIPTION> _ Description  _</DESCRIPTION>
+    </PHOTO>
+  </PHOTOS>
+  <BLABLA>Enter here the text that will be at bottom of the article</BLABLA>
+  <!--
+        Balise BLABLA :  paragraphe de texte
+        -->
+</ARTICLE>
