@@ -7,7 +7,7 @@ I frequently post my work as a craftsman on my Website for know how sharing purp
 I publish all articles in two languages, French and English.  
 In order to reduce the necessary time to do all that editorial stuff, I have developped this helper code in python.  
 
-#License
+# License
 This work can be shared under the respect of the Creative Commons License: CC BY-NC-SA 4.0
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
