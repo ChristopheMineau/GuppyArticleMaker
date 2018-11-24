@@ -41,7 +41,9 @@ The translated langage is a Google tranlation.
 
 
 # TAGS
-* <ARTICLE lang="('Fr', 'En')" relpath_on_site="file/dir1/dir2"></ARTICLE>
+*```<ARTICLE lang="('Fr', 'En')" relpath_on_site="file/dir1/dir2"></ARTICLE>```  
+** Article principle TAG. Here you provide sthe source language and optional second language.  
+** Provide also the relative path on the site of the folder
 
 
 
