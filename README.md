@@ -50,7 +50,7 @@ The translated langage is a Google tranlation.
 		* relpath_on_site : Provide  the relative path on the site of the folder
 
 *  ``` <TITLE>MON TITRE</TITLE>```  
-	* Title of the article
+	* A title 
 	* Attributes (optional):  
 		* format = 'h1'  : title level 1  
 		* format = 'h2'  : title level 2  
@@ -64,9 +64,8 @@ The translated langage is a Google tranlation.
 * ```<BLABLA> your text ... </BLABLA>```  
 	* A text paragraph  
 	
-* ```<PHOTO> single Photo </PHOTO>```
+* ```<PHOTO width='200'>```  
 ```
-<PHOTO width='200'>     
 	<NAME>one_illustration.jpg</NAME>
     	<DESCRIPTION>Description of the illustration.</DESCRIPTION>
 </PHOTO>
@@ -86,7 +85,7 @@ The translated langage is a Google tranlation.
 * ```<VIDEO>https://youtu.be/Ljli2uJJO0k</VIDEO>```  
 	* A Youtube video. On Youtube, click share to see the code.  
 	* Attributes (optional):  
-        	* width = '200'  : display width (default 560) 
+		* width = '200'  : display width (default 560) 
 		* height = '100' : display height (default 315)  
 * ```<PHOTOS format='Table_1col'> ```  
   ```
