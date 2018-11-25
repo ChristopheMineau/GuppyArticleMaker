@@ -154,13 +154,13 @@ Example:
 	* In English :  
 	http://www.labellenote.fr/articles.php?lng=en&pg=713&mnuid=312&tconfig=0
 
-* Here is an article with several 2 columns photo colections :  
+* Here is an article with several 2 columns photo collections :  
 	* In French :  
 	http://www.labellenote.fr/articles.php?lng=fr&pg=739&mnuid=312&tconfig=0
 	* In English :  
 	http://www.labellenote.fr/articles.php?lng=en&pg=739&mnuid=312&tconfig=0
 
-* Here is an article with several 1 columns photo colections :  
+* Here is an article with several 1 columns photo collections :  
 	* In French :  
 	http://www.labellenote.fr/articles.php?lng=fr&pg=740&mnuid=312&tconfig=0
 	* In English :  
