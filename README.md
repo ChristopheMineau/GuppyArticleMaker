@@ -21,24 +21,24 @@ Most of my tooling work is also published on HomeMadeTools.net : http://www.home
 # How To Use it
 Here are the steps that need to be taken :      
 
-* Create a directory and gather all the pictures you want to pubish
-* Launch the tool once, with no parameter in that directory :  
+1. Create a directory and gather all the pictures you want to pubish
+1. Launch the tool once, with no parameter in that directory :  
 	python LBNarticleMaker.py "D:\Guppy\Articles\MyDummyArticle"  
-* This creates a template "ARTICLE.xml" file in the directory  
+1. This creates a template "ARTICLE.xml" file in the directory  
 (See an example in that repo)
-* Edit the ARTICLE.xml  
+1. Edit the ARTICLE.xml  
 It is a generic file with at least one template of all the known XML tags, each corresponding to an article feature.  
 You have a large choice of features and layouts.  
 You can delete or re-arrange the tags as you wish, put them in different orders, several times etc ...
-* In the main article tag, choose the primary langage and possibly a second translation language.
-* Fill in you text sections, in the primary language.
-* When you are happy, run a second time the tool :  
+1. In the main article tag, choose the primary langage and possibly a second translation language.
+1. Fill in you text sections, in the primary language.
+1. When you are happy, run a second time the tool :  
 	python LBNarticleMaker.py "D:\Guppy\Articles\MyDummyArticle"
-* This time, an html source file "ARTICLE_SOURCECODE.html" is generated, containing one section for each langage.  
+1. This time, an html source file "ARTICLE_SOURCECODE.html" is generated, containing one section for each langage.  
 The translated langage is a Google tranlation.
-* Copy / paste each langage section source code in the Source box of the Guppy article for that langage.
-* Review and correct carefuly the often weird Google translations, and do the final layout adjustments in the Guppy article Box
-* Do not forget to upload to your site an equivalent folder with the pictures.
+1. Copy / paste each langage section source code in the Source box of the Guppy article for that langage.
+1. Review and correct carefuly the often weird Google translations, and do the final layout adjustments in the Guppy article Box
+1. Do not forget to upload to your site an equivalent folder with the pictures.
 
 
 # TAGS
