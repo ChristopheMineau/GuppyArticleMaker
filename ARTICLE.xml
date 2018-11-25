@@ -30,6 +30,8 @@
   <PHOTO>
     <!--
         Balise PHOTO : Une photo d'illustration isolée 
+        Attributs  :
+        * width='400' (optionnel) : largeur de l'image         
         -->
     <NAME>one_illustration.jpg</NAME>
     <DESCRIPTION>Description of the illustration.</DESCRIPTION>

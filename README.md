@@ -71,8 +71,8 @@ The translated langage is a Google tranlation.
 </PHOTO>
 ```
 	* A single picture, anywhere in the article  
-        * Attributes (optional):
-        	* width='400' : display width	
+	* Attributes (optional):  
+		* width='400' : display width	
 	* Sub-tags  (mandatory)  
 		* NAME : file name of the photo in the directory  
 		* DESCRIPTION : a caption text, leave 1 blank if empty  

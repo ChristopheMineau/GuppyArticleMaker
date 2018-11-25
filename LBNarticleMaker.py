@@ -66,7 +66,7 @@ import time
 import platform
 print("Python version = {}".format(platform.python_version()))
 # from translate import Translator # pip install translate   # doesn't work very well ..
-from googletrans import Translator # pip install googletrans (bug 2018)
+# from googletrans import Translator # pip install googletrans (bug 2018)
 from py_translator import Translator # pip3 install py_translator==1.8.9  see https://stackoverflow.com/questions/52455774/googletrans-stopped-working-with-error-nonetype-object-has-no-attribute-group
 
 from lxml import etree as ET
@@ -187,6 +187,8 @@ class ArticleFile:
         solophoto = ET.SubElement(article, 'PHOTO')
         solophoto.append(ET.Comment('''
         Balise PHOTO : Une photo d'illustration isolée 
+        Attributs  :
+        * width='400' (optionnel) : largeur de l'image         
         '''))
         solophotoname =  ET.SubElement(solophoto, 'NAME')
         solophotoname.text = "one_illustration.jpg"
