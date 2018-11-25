@@ -41,6 +41,45 @@ The translated langage is a Google tranlation.
 1. Do not forget to upload to your site an equivalent folder with the pictures.
 
 
+# WHAT YOU NEED
+* A little bit of XML and Python knowledge, if you're not familiar with that, please check the numerous tutorials over the Net
+* A Python 3 installation  
+* Library dependencies, need to install first :
+	* py_translator : # pip3 install py_translator==1.8.9  see https://stackoverflow.com/questions/52455774/googletrans-stopped-working-with-error-nonetype-object-has-no-attribute-group  
+	* platform (should be already there)
+	* lxml (should be already there ?)
+	* docopt 	:	 # pip3 install docopt
+* Clone this repositary or download the Zip and launch :
+```
+> python LBNarticleMaker.py -h
+```
+
+# Usage:
+```
+  LBNarticleMaker.py <path>
+  LBNarticleMaker.py (-h | --help)
+  LBNarticleMaker.py <path> [--sourceLanguage=<lg>] [--photoType=<type>]
+  LBNarticleMaker.py <path> --debug
+
+
+
+Options:
+  -h --help                Get help.
+  --version                Get this program version.
+  --photoType=<typ>        Type of the photos, [default: jpg].
+  --sourceLanguage=<lg>    Source language, [default: Fr], you can use En, Sp, De ...
+  --debug                  Displays translation results on the fly.
+
+
+
+
+Example:
+  python LBNarticleMaker.py "D:\Guppy\Articles\MyDummyArticle"
+  python LBNarticleMaker.py "D:\Guppy\Articles\MyDummyArticle" --photoType=png
+
+```
+
+
 # TAGS
 
 * ```<ARTICLE lang="('Fr', 'En')" relpath_on_site="file/dir1/dir2"> ... </ARTICLE>``` 
@@ -88,14 +127,14 @@ The translated langage is a Google tranlation.
 		* width = '200'  : display width (default 560) 
 		* height = '100' : display height (default 315)  
 * ```<PHOTOS format='Table_1col'> ```  
-  ```
+```
    <PHOTO>
       <NAME>pic0001.jpg</NAME>
       <DESCRIPTION> _ Description1  _</DESCRIPTION>
     </PHOTO>
     ....
   </PHOTOS>
-  ```
+```
 	* A collection of photos  
 	They can be displayed in three ways, tables or slideshow.  
 	* Attributes (mandatory):  
@@ -109,6 +148,32 @@ The translated langage is a Google tranlation.
 
 # Examples
 
+
+* Here is an example with several single photos of different sizes, a collection and a video :  
+	* In French :  
+	http://www.labellenote.fr/articles.php?lng=fr&pg=713&mnuid=312&tconfig=0
+	* In English :  	
+	http://www.labellenote.fr/articles.php?lng=en&pg=713&mnuid=312&tconfig=0
+
+* Here is an article with several 2 columns photo colections :  
+	* In French :  
+	http://www.labellenote.fr/articles.php?lng=fr&pg=739&mnuid=312&tconfig=0
+	* In English :  
+	http://www.labellenote.fr/articles.php?lng=en&pg=739&mnuid=312&tconfig=0
+
+* Here is an article with several 1 columns photo colections :  
+	* In French :  
+	http://www.labellenote.fr/articles.php?lng=fr&pg=740&mnuid=312&tconfig=0
+	* In English :  
+	http://www.labellenote.fr/articles.php?lng=en&pg=740&mnuid=312&tconfig=0
+
+* Here is an article with a 'Carousel' type slideshow :  
+	* In French :  
+	http://www.labellenote.fr/articles.php?lng=fr&pg=877&mnuid=498&tconfig=0
+	* In English :  
+	http://www.labellenote.fr/articles.php?lng=en&pg=877&mnuid=498&tconfig=0
+
+With a little bit of training, no more than 15mn for publishing this last article, all included.
 
 # Known issues
 It is always possible that Google discontinues its translation service, or at least the free access to it.  
