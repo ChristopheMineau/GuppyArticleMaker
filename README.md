@@ -45,10 +45,10 @@ The translated langage is a Google tranlation.
 * A little bit of XML and Python knowledge, if you're not familiar with that, please check the numerous tutorials over the Net
 * A Python 3 installation  
 * Library dependencies, need to install first :
-	* py_translator : # pip3 install py_translator==1.8.9  see https://stackoverflow.com/questions/52455774/googletrans-stopped-working-with-error-nonetype-object-has-no-attribute-group  
+	* py_translator :  # 'pip3 install py_translator==1.8.9' ,  see https://stackoverflow.com/questions/52455774/googletrans-stopped-working-with-error-nonetype-object-has-no-attribute-group  
 	* platform (should be already there)
 	* lxml (should be already there ?)
-	* docopt 	:	 # pip3 install docopt
+	* docopt 	:	 # 'pip3 install docopt'
 * Clone this repositary or download the Zip and launch :
 ```
 > python LBNarticleMaker.py -h
