@@ -52,9 +52,9 @@ The translated langage is a Google tranlation.
 *  ``` <TITLE>MON TITRE</TITLE>```  
 	* Title of the article
 	* Attributes (optional):  
-        	* format = 'h1'  : title level 1  
-          	* format = 'h2'  : title level 2  
-          	* format = 'h3'  : title level 3  
+		* format = 'h1'  : title level 1  
+		* format = 'h2'  : title level 2  
+		* format = 'h3'  : title level 3  
 		
 * ```<HEAD_PICTURE width='600'>my_preferred_picture.jpg</HEAD_PICTURE>```  
 	* A picture at top of article, the one that will be shared on FB if you also use my FB addon   
@@ -64,11 +64,14 @@ The translated langage is a Google tranlation.
 * ```<BLABLA> your text ... </BLABLA>```  
 	* A text paragraph  
 	
-* ```<PHOTO width='200'>      
+* ```<PHOTO> single Photo </PHOTO>```
+```
+<PHOTO width='200'>     
 	<NAME>one_illustration.jpg</NAME>
     	<DESCRIPTION>Description of the illustration.</DESCRIPTION>
-  </PHOTO> ```
-  	* Attributes (optional):  
+</PHOTO>
+```  
+	* Attributes (optional):  
         	* width = '200'  : display width  
 	* A single picture, anywhere in the article  
 	* Sub-tags  (mandatory)  
@@ -85,19 +88,21 @@ The translated langage is a Google tranlation.
 	* Attributes (optional):  
         	* width = '200'  : display width (default 560) 
 		* height = '100' : display height (default 315)  
-* ```<PHOTOS format='Table_1col'>   
-    <PHOTO>
+* ```<PHOTOS format='Table_1col'> ```  
+  ```
+   <PHOTO>
       <NAME>pic0001.jpg</NAME>
       <DESCRIPTION> _ Description1  _</DESCRIPTION>
     </PHOTO>
     ....
-  </PHOTOS>```
+  </PHOTOS>
+  ```
 	* A collection of photos  
 	They can be displayed in three ways, tables or slideshow.  
 	* Attributes (mandatory):  
-        	* format : How will be displayed the galery  
-            		* Table_1col : A 1 column table with picture and description besides  
-            		* Table_2col : A 2 columns table with picture and description below  
+		* format : How will be displayed the galery  
+			* Table_1col : A 1 column table with picture and description besides  
+			* Table_2col : A 2 columns table with picture and description below  
 			* Carousel  : a slideshow   
 	* Sub-tags  (at least 1)  
 		* PHOTO : Photo tag as described above  
