@@ -151,7 +151,7 @@ Example:
 * Here is an example with several single photos of different sizes, a collection and a video :  
 	* In French :  
 	http://www.labellenote.fr/articles.php?lng=fr&pg=713&mnuid=312&tconfig=0
-	* In English :  	
+	* In English :  
 	http://www.labellenote.fr/articles.php?lng=en&pg=713&mnuid=312&tconfig=0
 
 * Here is an article with several 2 columns photo colections :  
