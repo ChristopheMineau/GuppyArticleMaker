@@ -1,0 +1,570 @@
+===================== Composing - Language Fr =====================
+
+
+<h1 style="color: red; text-align: center;"><span style="background-color:yellow;">&nbsp;&nbsp;&nbsp;
+       MON TITRE
+       &nbsp;&nbsp;&nbsp;</span></h1>
+       <br><br><br>
+        <center><img src="file/dir1/dir2/my_preferred_picture.jpg"  alt="FB"></center><br><br>
+<p>Enter here description before the video</p>
+
+<style>
+.autoLBNArticleSoloPhoto  {
+    cursor: pointer;
+}
+</style>
+
+    <table>
+    <tr><td><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/one_illustration.jpg" alt="one_illustration.jpg" id="img_one_illustration.jpg" onclick = "javascript:setModalImg('img_one_illustration.jpg','caption_one_illustration.jpg')"  width=320/></td></tr>
+    <tr><td style="text-align:  center;"><p id=caption_one_illustration.jpg>Description of the illustration.</p></td></tr>
+    </table>
+    
+<br><br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ljli2uJJO0k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Enter here description after the video</p>
+
+<style>
+
+.autoLBNArticleTable, .autoLBNArticleCaption, .autoLBNArticlePhoto {
+    border-spacing: 3px;
+    border-collapse: separate;
+    border: 1px solid black;
+}
+
+.autoLBNArticlePhoto {
+    width: 320px;
+    text-align: center;
+    padding: 10px; 
+    position: relative;
+}
+
+.autoLBNArticleNumber {
+    vertical-align: top; 
+    position: absolute;
+    top : 0;
+    left:45%;
+}
+
+.autoLBNArticleCaption {
+    width: 320px;
+    text-align: left; 
+    padding: 10px;
+}
+
+.autoLBNArticleThumbnail {
+    width: 320px;
+    text-align: center; 
+}
+
+.autoLBNArticleImage {
+    width: 100%;
+    height: 100%;    
+}
+
+.autoLBNArticleImage img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.autoLBNArticleImage:hover img {
+    -webkit-transform:scale(2); /* Safari and Chrome */
+    -moz-transform:scale(2); /* Firefox */
+    -ms-transform:scale(2); /* IE 9 */
+    -o-transform:scale(2); /* Opera */
+     transform:scale(2);
+     transition-delay: 1s;
+     z-index: 2;
+}
+
+/* Modal window when image is clicked */
+/* The Modal (background) */
+.autoLBNArticleModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    z-index: 3;   /* Bring on top */
+}
+
+/* Modal Content (image) */
+.autoLBNArticleModal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Caption of Modal Image */
+.autoLBNArticleModal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.autoLBNArticleModal-content, #autoLBNArticleCaption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.autoLBNArticleClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.autoLBNArticleClose:hover,
+.autoLBNArticleClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+</style>
+
+<!-- The Modal window for photo display when clicked -->
+<div id="autoLBNArticleMyModal" class="autoLBNArticleModal">
+
+  <!-- The Close Button -->
+  <span class="autoLBNArticleClose" onclick = "closeModalImg()">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="autoLBNArticleModal-content" id="autoLBNArticleModalImg">
+
+  <!-- Modal Caption (Image Text) -->
+  <div class="autoLBNArticleModal-caption" id="autoLBNArticleModalCaption"></div>
+</div>        
+<table class=autoLBNArticleTable>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 1 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0001.jpg" alt="" id="img_Anti_debordement_0001.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0001.jpg','caption_Anti_debordement_0001.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0001.jpg"> _ Description  _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 2 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0002.jpg" alt="" id="img_Anti_debordement_0002.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0002.jpg','caption_Anti_debordement_0002.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0002.jpg"> _ Description  _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 3 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0003.jpg" alt="" id="img_Anti_debordement_0003.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0003.jpg','caption_Anti_debordement_0003.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0003.jpg"> _ Description  _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 4 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0004.jpg" alt="" id="img_Anti_debordement_0004.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0004.jpg','caption_Anti_debordement_0004.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0004.jpg"> _ Description  _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 5 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0005.jpg" alt="" id="img_Anti_debordement_0005.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0005.jpg','caption_Anti_debordement_0005.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0005.jpg"> _ Description  _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 6 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0006.jpg" alt="" id="img_Anti_debordement_0006.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0006.jpg','caption_Anti_debordement_0006.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0006.jpg"> _ Description  _</p>
+</td>
+</tr>
+</table>
+<p>Enter here the text that will be at bottom of the article</p>
+ 
+<script>
+// Get the modal at loading time : no display
+var modal = document.getElementById('autoLBNArticleMyModal');
+modal.style.display = "none";
+
+
+// When the user clicks on <span> (x), close the modal   span.onclick = "closeModalImg()"
+function closeModalImg() { 
+    // Get the modal
+    var modal = document.getElementById('autoLBNArticleMyModal');
+    // Stop displaying the modal
+    modal.style.display = "none";
+}
+
+//  Fills the modal with the clicked Image img.onclick = setModalImg(idImg, idCaption) 
+function setModalImg(idImg, idCaption) {
+    // Get the image and insert it inside the modal 
+    var img = document.getElementById(idImg);
+    var modalImg = document.getElementById("autoLBNArticleModalImg");
+    var captionText = document.getElementById(idCaption);
+    var modalCaptionText = document.getElementById("autoLBNArticleModalCaption");
+    modalImg.src = img.src;
+    modalCaptionText.innerHTML = captionText.innerHTML;  
+    // Display the modal
+    var modal = document.getElementById('autoLBNArticleMyModal');
+    modal.style.display = "block";        
+}
+
+</script>
+
+
+
+===================== End of article - Language Fr =====================
+
+
+===================== Composing - Language En =====================
+
+
+<h1 style="color: red; text-align: center;"><span style="background-color:yellow;">&nbsp;&nbsp;&nbsp;
+       MY TITLE
+       &nbsp;&nbsp;&nbsp;</span></h1>
+       <br><br><br>
+        <center><img src="file/dir1/dir2/my_preferred_picture.jpg"  alt="FB"></center><br><br>
+<p>Enter here description before the video</p>
+
+<style>
+.autoLBNArticleSoloPhoto  {
+    cursor: pointer;
+}
+</style>
+
+    <table>
+    <tr><td><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/one_illustration.jpg" alt="one_illustration.jpg" id="img_one_illustration.jpg" onclick = "javascript:setModalImg('img_one_illustration.jpg','caption_one_illustration.jpg')"  width=320/></td></tr>
+    <tr><td style="text-align:  center;"><p id=caption_one_illustration.jpg>Description of the illustration.</p></td></tr>
+    </table>
+    
+<br><br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ljli2uJJO0k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Enter here description after the video</p>
+
+<style>
+
+.autoLBNArticleTable, .autoLBNArticleCaption, .autoLBNArticlePhoto {
+    border-spacing: 3px;
+    border-collapse: separate;
+    border: 1px solid black;
+}
+
+.autoLBNArticlePhoto {
+    width: 320px;
+    text-align: center;
+    padding: 10px; 
+    position: relative;
+}
+
+.autoLBNArticleNumber {
+    vertical-align: top; 
+    position: absolute;
+    top : 0;
+    left:45%;
+}
+
+.autoLBNArticleCaption {
+    width: 320px;
+    text-align: left; 
+    padding: 10px;
+}
+
+.autoLBNArticleThumbnail {
+    width: 320px;
+    text-align: center; 
+}
+
+.autoLBNArticleImage {
+    width: 100%;
+    height: 100%;    
+}
+
+.autoLBNArticleImage img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.autoLBNArticleImage:hover img {
+    -webkit-transform:scale(2); /* Safari and Chrome */
+    -moz-transform:scale(2); /* Firefox */
+    -ms-transform:scale(2); /* IE 9 */
+    -o-transform:scale(2); /* Opera */
+     transform:scale(2);
+     transition-delay: 1s;
+     z-index: 2;
+}
+
+/* Modal window when image is clicked */
+/* The Modal (background) */
+.autoLBNArticleModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    z-index: 3;   /* Bring on top */
+}
+
+/* Modal Content (image) */
+.autoLBNArticleModal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Caption of Modal Image */
+.autoLBNArticleModal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.autoLBNArticleModal-content, #autoLBNArticleCaption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.autoLBNArticleClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.autoLBNArticleClose:hover,
+.autoLBNArticleClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+</style>
+
+<!-- The Modal window for photo display when clicked -->
+<div id="autoLBNArticleMyModal" class="autoLBNArticleModal">
+
+  <!-- The Close Button -->
+  <span class="autoLBNArticleClose" onclick = "closeModalImg()">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="autoLBNArticleModal-content" id="autoLBNArticleModalImg">
+
+  <!-- Modal Caption (Image Text) -->
+  <div class="autoLBNArticleModal-caption" id="autoLBNArticleModalCaption"></div>
+</div>        
+<table class=autoLBNArticleTable>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 1 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0001.jpg" alt="" id="img_Anti_debordement_0001.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0001.jpg','caption_Anti_debordement_0001.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0001.jpg">_ Description _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 2 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0002.jpg" alt="" id="img_Anti_debordement_0002.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0002.jpg','caption_Anti_debordement_0002.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0002.jpg">_ Description _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 3 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0003.jpg" alt="" id="img_Anti_debordement_0003.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0003.jpg','caption_Anti_debordement_0003.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0003.jpg">_ Description _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 4 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0004.jpg" alt="" id="img_Anti_debordement_0004.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0004.jpg','caption_Anti_debordement_0004.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0004.jpg">_ Description _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 5 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0005.jpg" alt="" id="img_Anti_debordement_0005.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0005.jpg','caption_Anti_debordement_0005.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0005.jpg">_ Description _</p>
+</td>
+</tr>
+<tr class=autoLBNArticleTable>
+<td  class=autoLBNArticlePhoto>
+<div class=autoLBNArticleNumber>- 6 -</div><br>
+<div class="autoLBNArticleThumbnail">
+<div class="autoLBNArticleImage"><img class="autoLBNArticleSoloPhoto" src="file/dir1/dir2/Anti_debordement_0006.jpg" alt="" id="img_Anti_debordement_0006.jpg" onclick = "javascript:setModalImg('img_Anti_debordement_0006.jpg','caption_Anti_debordement_0006.jpg')"  width=320/></div>
+</div>
+</td>
+<td  class=autoLBNArticleCaption>
+<p id="caption_Anti_debordement_0006.jpg">_ Description _</p>
+</td>
+</tr>
+</table>
+<p>Enter here the text that will be at bottom of the article</p>
+ 
+<script>
+// Get the modal at loading time : no display
+var modal = document.getElementById('autoLBNArticleMyModal');
+modal.style.display = "none";
+
+
+// When the user clicks on <span> (x), close the modal   span.onclick = "closeModalImg()"
+function closeModalImg() { 
+    // Get the modal
+    var modal = document.getElementById('autoLBNArticleMyModal');
+    // Stop displaying the modal
+    modal.style.display = "none";
+}
+
+//  Fills the modal with the clicked Image img.onclick = setModalImg(idImg, idCaption) 
+function setModalImg(idImg, idCaption) {
+    // Get the image and insert it inside the modal 
+    var img = document.getElementById(idImg);
+    var modalImg = document.getElementById("autoLBNArticleModalImg");
+    var captionText = document.getElementById(idCaption);
+    var modalCaptionText = document.getElementById("autoLBNArticleModalCaption");
+    modalImg.src = img.src;
+    modalCaptionText.innerHTML = captionText.innerHTML;  
+    // Display the modal
+    var modal = document.getElementById('autoLBNArticleMyModal');
+    modal.style.display = "block";        
+}
+
+</script>
+
+
+
+===================== End of article - Language En =====================
+
+
