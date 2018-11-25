@@ -148,7 +148,6 @@ Example:
 
 # Examples
 
-
 * Here is an example with several single photos of different sizes, a collection and a video :  
 	* In French :  
 	http://www.labellenote.fr/articles.php?lng=fr&pg=713&mnuid=312&tconfig=0
