@@ -35,6 +35,7 @@ You can delete or re-arrange the tags as you wish, put them in different orders,
 1. When you are happy, run a second time the tool :  
 	python LBNarticleMaker.py "D:\Guppy\Articles\MyDummyArticle"
 1. This time, an html source file "ARTICLE_SOURCECODE.html" is generated, containing one section for each langage.  
+See an example provided in the repo.
 The translated langage is a Google tranlation.
 1. Copy / paste each langage section source code in the Source box of the Guppy article for that langage.
 1. Review and correct carefuly the often weird Google translations, and do the final layout adjustments in the Guppy article Box
