@@ -43,10 +43,65 @@ The translated langage is a Google tranlation.
 
 # TAGS
 
-* ```<ARTICLE lang="('Fr', 'En')" relpath_on_site="file/dir1/dir2"></ARTICLE>```  
-	* Article principle TAG. Here you provide sthe source language and optional second language.  
-	* Provide also the relative path on the site of the folder
-* 
+* ```<ARTICLE lang="('Fr', 'En')" relpath_on_site="file/dir1/dir2"> ... </ARTICLE>``` 
+	* Article container TAG.
+	* Attributes (mandatory):
+		* lang : Here you provide the source language and optional second language.  
+		* relpath_on_site : Provide  the relative path on the site of the folder
+
+*  ``` <TITLE>MON TITRE</TITLE>```  
+	* Title of the article
+	* Attributes (optional):  
+        	* format = 'h1'  : title level 1  
+          	* format = 'h2'  : title level 2  
+          	* format = 'h3'  : title level 3  
+		
+* ```<HEAD_PICTURE width='600'>my_preferred_picture.jpg</HEAD_PICTURE>```  
+	* A picture at top of article, the one that will be shared on FB if you also use my FB addon   
+        * Attributes (optional):
+        	* width='400' : display width  
+		
+* ```<BLABLA> your text ... </BLABLA>```  
+	* A text paragraph  
+	
+* ```<PHOTO width='200'>      
+	<NAME>one_illustration.jpg</NAME>
+    	<DESCRIPTION>Description of the illustration.</DESCRIPTION>
+  </PHOTO> ```
+  	* Attributes (optional):  
+        	* width = '200'  : display width  
+	* A single picture, anywhere in the article  
+	* Sub-tags  (mandatory)  
+		* NAME : file name of the photo in the directory  
+		* DESCRIPTION : a caption text, leave 1 blank if empty  
+
+* ```<SPACER lines="3"/>```
+	* Jump lines  
+	* Attributes (mandatory):  
+		* lines : number of lines to jump
+
+* ```<VIDEO>https://youtu.be/Ljli2uJJO0k</VIDEO>```  
+	* A Youtube video. On Youtube, click share to see the code.  
+	* Attributes (optional):  
+        	* width = '200'  : display width (default 560) 
+		* height = '100' : display height (default 315)  
+* ```<PHOTOS format='Table_1col'>   
+    <PHOTO>
+      <NAME>pic0001.jpg</NAME>
+      <DESCRIPTION> _ Description1  _</DESCRIPTION>
+    </PHOTO>
+    ....
+  </PHOTOS>```
+	* A collection of photos  
+	They can be displayed in three ways, tables or slideshow.  
+	* Attributes (mandatory):  
+        	* format : How will be displayed the galery  
+            		* Table_1col : A 1 column table with picture and description besides  
+            		* Table_2col : A 2 columns table with picture and description below  
+			* Carousel  : a slideshow   
+	* Sub-tags  (at least 1)  
+		* PHOTO : Photo tag as described above  
+ 
 
 # Examples
 
