@@ -68,7 +68,8 @@ print("Python version = {}".format(platform.python_version()))
 # from translate import Translator # pip install translate   # doesn't work very well ..
 # from googletrans import Translator # pip install googletrans (bug 2018)
 from py_translator import Translator # pip3 install py_translator==1.8.9  see https://stackoverflow.com/questions/52455774/googletrans-stopped-working-with-error-nonetype-object-has-no-attribute-group
-
+# important ! dec 2018 : stopped working, fixed by patch in gtoken.py line 41,
+# see : # fix, see https://github.com/markolofsen/py_translator/pull/8/commits/410ccdcafdcc2a087b455b4e6a5eb7fef13f1c69
 from lxml import etree as ET
 from docopt import docopt  # pip install docopt
 from _elementtree import SubElement
